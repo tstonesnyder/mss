@@ -1,2 +1,1 @@
-# mss
-Personal web site for Madeline Stone Snyder
+This is a personal web site for Madeline Stone Snyder
