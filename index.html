@@ -106,8 +106,8 @@
   <div class="container">
     <h1>Coming soon!</h1>
     <div class="contact-wrap">
-      <button id="contact-btn" class="btn" aria-label="Email Madeline (opens mail client)"
-        data-enc="aW5mb0BtYWRlbGluZXN0b25lc3NueWRlci5jb20=">Contact Me</button>
+      <!-- data-enc="" -->
+      <button id="contact-btn" class="btn" aria-label="Email Madeline (opens mail client)">Contact Me</button>
     </div>
     <noscript>
       <p style="text-align:center;color:var(--muted)">JavaScript is required to open the contact link.</p>
@@ -122,7 +122,9 @@
       var btn = document.getElementById('contact-btn');
       if (!btn) return;
       btn.addEventListener('click', function () {
-        var mail = atob(this.dataset.enc);
+        let x = 'Y29udGFjdEBtYWRlbGluZXN0b25lc255ZGVyLmNvbQ==';
+        // var mail = atob(this.dataset.enc);
+        let mail = atob(x);
         window.location.href = 'mailto:' + mail;
       });
     })();
