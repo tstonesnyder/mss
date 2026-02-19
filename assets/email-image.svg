@@ -2,6 +2,6 @@
   <title id="title">Contact email image</title>
   <desc id="desc">Image displaying the contact email address</desc>
   <!-- Transparent background so image blends with page -->
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-        font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#b76b45">info@madelinestonesnyder.com</text>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#b76b45">contact@madelinestonesnyder.com</text>
 </svg>
