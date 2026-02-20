@@ -611,7 +611,10 @@ I am an anthropological archaeologist with six years of field experience investi
             <strong>Email</strong>
             <!-- <div class="meta">Use an academic email or a professional address.</div> -->
             <p class="muted" style="margin: 8px 0 0;">
-              <a href="mailto:">TODO</a>
+              <!-- TODO: Fix this -->
+              <!-- <a href="mailto:">TODO</a> -->
+              <!-- <a id="contact-link" rel="nofollow, noindex" href="-cobble-bon-tobble-bact/TODO/">Contact Me</a> -->
+              <a id="contact-link" rel="nofollow, noindex" href="#" data-enc="cobble-bon-tobble-bact">Contact Me</a>
             </p>
           </div>
           <div class="item">
@@ -663,6 +666,15 @@ I am an anthropological archaeologist with six years of field experience investi
         const h = (location.hash || '#home').replace('#','').trim();
         return routes.some(s => s.id === h) ? h : 'home';
       }
+
+      // TODO: fix this
+      document.addEventListener('DOMContentLoaded', () => {
+        const a = document.getElementById('contact-link');
+        if (!a) return;
+        let user = a.getAttribute('data-enc');
+        user = `to:${user.replaceAll('obble-b', '').replaceAll('-', '')}`;
+        a.setAttribute('href', `mail${user}@${[['madeline', 'tone', 'nyder'].join('s'), 'com'].join('.')}`);
+      });
 
       tabs.forEach(btn => {
         btn.addEventListener('click', () => {
