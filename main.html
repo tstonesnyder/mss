@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <title>Website Mockups</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font (optional – remove if you want system fonts only) -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1f2f46;      /* deep academic blue */
+      --accent:  #2f5c8a;      /* softer blue */
+      --bg:      #f6f4ef;      /* warm neutral */
+      --card:    #ffffff;
+      --border:  #e3e0d8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: "Libre Baskerville", serif;
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 1rem;
+    }
+
+    .card-container {
+      display: grid;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .card {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      text-align: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Website Mockup Options</h1>
+  </header>
+
+  <main>
+    <div class="card-container">
+      <div class="card">
+        <a href="./mockups/opt-a/index.html">Mockup A</a>
+      </div>
+      <div class="card">
+        <a href="./mockups/opt-b/index.html">Mockup B</a>
+      </div>
+      <div class="card">
+        <a href="./mockups/opt-c/index.html">Mockup C</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Internal review page — not for public release.
+  </footer>
+
+</body>
+</html>
